@@ -1,9 +1,7 @@
+@import '../styles/flashcard-flip.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Import Flashcard Flip Styles */
-@import '../styles/flashcard-flip.css';
 
 /* Glow Effect Variables */
 :root {

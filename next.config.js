@@ -2,7 +2,11 @@
 const nextConfig = {
   // Configurações de imagem
   images: {
-    domains: ['localhost', 'everestpreparatorios.com.br', 'img.youtube.com'],
+    remotePatterns: [
+      { protocol: 'http', hostname: 'localhost' },
+      { protocol: 'https', hostname: 'everestpreparatorios.com.br' },
+      { protocol: 'https', hostname: 'img.youtube.com' },
+    ],
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: false,
@@ -226,11 +230,6 @@ const nextConfig = {
   // Configurações de TypeScript
   typescript: {
     ignoreBuildErrors: false,
-  },
-
-  // Configurações de ESLint
-  eslint: {
-    ignoreDuringBuilds: false,
   },
 }
 
