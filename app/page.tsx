@@ -1381,7 +1381,7 @@ export default function LandingPage() {
 
                       {/* Parcelamento com destaque */}
                       <CardDescription className="text-gray-300 text-lg">
-                        <span className="text-orange-400 font-semibold">ou 12x de R$ 123,75</span>
+                        <span className="text-orange-400 font-semibold">ou 12x de R$ 153,58</span>
                       </CardDescription>
 
                       {/* Economia destacada */}
