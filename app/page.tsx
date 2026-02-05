@@ -607,7 +607,7 @@ export default function LandingPage() {
                         </div>
                         <span className="text-base sm:text-lg font-extrabold">Garantir Minha Vaga</span>
                         <div className="bg-yellow-400 text-orange-900 px-3 py-1 rounded-full text-sm font-bold">
-                          R$ 1.485,00
+                          R$ 1.331,29
                         </div>
                       </div>
                     </Button>
@@ -1283,7 +1283,7 @@ export default function LandingPage() {
                   <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent"> especial</span>
                 </h2>
                 <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                  De R$ 1.980,00 por apenas R$ 1.485,00. Economia de R$ 495,00 + bônus exclusivos.
+                  De R$ 1.987,00 por apenas R$ 1.331,29. Economia de R$ 655,71 + bônus exclusivos.
                 </p>
               </div>
 
@@ -1305,7 +1305,7 @@ export default function LandingPage() {
                     <CardHeader className="text-center pt-6">
                       <CardTitle className="text-2xl text-gray-300">De</CardTitle>
                       <div className="relative">
-                        <div className="text-5xl font-black text-gray-400 line-through opacity-60">R$ 1.980,00</div>
+                        <div className="text-5xl font-black text-gray-400 line-through opacity-60">R$ 1.987,00</div>
                         {/* Símbolo de "não vale a pena" */}
                         <div className="absolute -top-2 -right-2 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
                           <X className="w-5 h-5 text-white font-bold" />
@@ -1370,7 +1370,7 @@ export default function LandingPage() {
                       <div className="relative">
                         {/* Preço principal com efeito de brilho */}
                         <div className="text-6xl font-black bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
-                          R$ 1.485,00
+                          R$ 1.331,29
                         </div>
 
                         {/* Símbolo de "vale muito a pena" */}
@@ -1381,13 +1381,13 @@ export default function LandingPage() {
 
                       {/* Parcelamento com destaque */}
                       <CardDescription className="text-gray-300 text-lg">
-                        <span className="text-orange-400 font-semibold">ou 12x de R$ 153,58</span>
+                        <span className="text-orange-400 font-semibold">ou 12x de R$ 137,69</span>
                       </CardDescription>
 
                       {/* Economia destacada */}
                       <div className="mt-3 p-2 bg-green-500/20 border border-green-500/30 rounded-lg">
                         <p className="text-green-400 text-sm font-bold">
-                          💰 ECONOMIA DE R$ 495,00 + BÔNUS!
+                          💰 ECONOMIA DE R$ 655,71 + BÔNUS!
                         </p>
                       </div>
                     </CardHeader>
@@ -1447,7 +1447,7 @@ export default function LandingPage() {
               {/* Bônus */}
               <div className="mt-12 text-center">
                 <h3 className="text-2xl font-bold mb-8">
-                  <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Bônus Exclusivos</span> (Valor: R$ 495,00)
+                  <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Bônus Exclusivos</span> (Valor: R$ 655,71)
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-2">
                   <div className="bg-gradient-to-br from-[#1e293b] to-[#334155] rounded-lg p-6 border border-orange-500/20">
@@ -1517,7 +1517,7 @@ export default function LandingPage() {
                         </div>
                         <span className="text-base sm:text-lg font-extrabold">Garantir Minha Vaga</span>
                         <div className="bg-yellow-400 text-orange-900 px-3 py-1 rounded-full text-sm font-bold">
-                          R$ 1.485,00
+                          R$ 1.331,29
                         </div>
                       </div>
                     </Button>
