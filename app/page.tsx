@@ -284,7 +284,7 @@ export default function LandingPage() {
 
                       <h3 className="text-2xl font-bold mb-3 text-blue-400">Grupo Telegram</h3>
                       <p className="text-gray-300 mb-4">
-                        📱 Extensivo EAOF 2026<br />
+                        📱 Extensivo EAOF 2027<br />
                         <span className="text-sm text-gray-400">Somente para Alunos</span>
                       </p>
 
@@ -583,7 +583,7 @@ export default function LandingPage() {
             <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Pronto para conquistar sua
-                <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent"> vaga no EAOF 2026?</span>
+                <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent"> vaga no EAOF 2027?</span>
               </h2>
               <p className="text-xl text-gray-300 mb-8">
                 Junte-se aos 41 alunos aprovados no EAOF 2025 que já passaram com nossa metodologia comprovada.
@@ -607,7 +607,7 @@ export default function LandingPage() {
                         </div>
                         <span className="text-base sm:text-lg font-extrabold">Garantir Minha Vaga</span>
                         <div className="bg-yellow-400 text-orange-900 px-3 py-1 rounded-full text-sm font-bold">
-                          R$ 998,50
+                          R$ 1.485,00
                         </div>
                       </div>
                     </Button>
@@ -1283,7 +1283,7 @@ export default function LandingPage() {
                   <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent"> especial</span>
                 </h2>
                 <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                  De R$ 1.497 por apenas R$ 998,50. Economia de R$ 498,50 + bônus exclusivos.
+                  De R$ 1.980,00 por apenas R$ 1.485,00. Economia de R$ 495,00 + bônus exclusivos.
                 </p>
               </div>
 
@@ -1305,7 +1305,7 @@ export default function LandingPage() {
                     <CardHeader className="text-center pt-6">
                       <CardTitle className="text-2xl text-gray-300">De</CardTitle>
                       <div className="relative">
-                        <div className="text-5xl font-black text-gray-400 line-through opacity-60">R$ 1.497</div>
+                        <div className="text-5xl font-black text-gray-400 line-through opacity-60">R$ 1.980,00</div>
                         {/* Símbolo de "não vale a pena" */}
                         <div className="absolute -top-2 -right-2 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
                           <X className="w-5 h-5 text-white font-bold" />
@@ -1370,7 +1370,7 @@ export default function LandingPage() {
                       <div className="relative">
                         {/* Preço principal com efeito de brilho */}
                         <div className="text-6xl font-black bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
-                          R$ 998,50
+                          R$ 1.485,00
                         </div>
 
                         {/* Símbolo de "vale muito a pena" */}
@@ -1381,13 +1381,13 @@ export default function LandingPage() {
 
                       {/* Parcelamento com destaque */}
                       <CardDescription className="text-gray-300 text-lg">
-                        <span className="text-orange-400 font-semibold">ou 12x de R$ 99,85</span>
+                        <span className="text-orange-400 font-semibold">ou 12x de R$ 123,75</span>
                       </CardDescription>
 
                       {/* Economia destacada */}
                       <div className="mt-3 p-2 bg-green-500/20 border border-green-500/30 rounded-lg">
                         <p className="text-green-400 text-sm font-bold">
-                          💰 ECONOMIA DE R$ 498,50 + BÔNUS!
+                          💰 ECONOMIA DE R$ 495,00 + BÔNUS!
                         </p>
                       </div>
                     </CardHeader>
@@ -1447,7 +1447,7 @@ export default function LandingPage() {
               {/* Bônus */}
               <div className="mt-12 text-center">
                 <h3 className="text-2xl font-bold mb-8">
-                  <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Bônus Exclusivos</span> (Valor: R$ 497)
+                  <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Bônus Exclusivos</span> (Valor: R$ 495,00)
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-2">
                   <div className="bg-gradient-to-br from-[#1e293b] to-[#334155] rounded-lg p-6 border border-orange-500/20">
@@ -1493,7 +1493,7 @@ export default function LandingPage() {
             <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Pronto para conquistar sua
-                <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent"> vaga no EAOF 2026?</span>
+                <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent"> vaga no EAOF 2027?</span>
               </h2>
               <p className="text-xl text-gray-300 mb-8">
                 Junte-se aos 41 alunos aprovados no EAOF 2025 que já passaram com nossa metodologia comprovada.
@@ -1517,7 +1517,7 @@ export default function LandingPage() {
                         </div>
                         <span className="text-base sm:text-lg font-extrabold">Garantir Minha Vaga</span>
                         <div className="bg-yellow-400 text-orange-900 px-3 py-1 rounded-full text-sm font-bold">
-                          R$ 998,50
+                          R$ 1.485,00
                         </div>
                       </div>
                     </Button>
@@ -1704,7 +1704,7 @@ export default function LandingPage() {
 
                 <p className="text-gray-300 mb-4 text-sm leading-relaxed">
                   O grupo do Telegram é exclusivo para alunos que adquiriram o
-                  <span className="text-orange-400 font-semibold"> EAOF 2026 Completo</span>.
+                  <span className="text-orange-400 font-semibold"> EAOF 2027 Completo</span>.
                 </p>
 
                 <div className="bg-slate-800/50 rounded-lg p-4 mb-6">
@@ -1730,7 +1730,7 @@ export default function LandingPage() {
                 >
                   <Button className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-3 rounded-lg transition-all duration-300">
                     <Gift className="w-5 h-5 mr-2" />
-                    Adquirir EAOF 2026 Completo
+                    Adquirir EAOF 2027 Completo
                   </Button>
                 </a>
 
