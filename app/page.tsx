@@ -607,7 +607,7 @@ export default function LandingPage() {
                         </div>
                         <span className="text-base sm:text-lg font-extrabold">Garantir Minha Vaga</span>
                         <div className="bg-yellow-400 text-orange-900 px-3 py-1 rounded-full text-sm font-bold">
-                          R$ 1.331,29
+                          10x de R$ 160,00
                         </div>
                       </div>
                     </Button>
@@ -1283,7 +1283,7 @@ export default function LandingPage() {
                   <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent"> especial</span>
                 </h2>
                 <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                  De R$ 1.987,00 por apenas R$ 1.331,29. Economia de R$ 655,71 + bônus exclusivos.
+                  De R$ 1.987,00 por apenas 10x de R$ 160,00. Economia de R$ 387,00 + bônus exclusivos.
                 </p>
               </div>
 
@@ -1370,7 +1370,7 @@ export default function LandingPage() {
                       <div className="relative">
                         {/* Preço principal com efeito de brilho */}
                         <div className="text-6xl font-black bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
-                          R$ 1.331,29
+                          10x de R$ 160,00
                         </div>
 
                         {/* Símbolo de "vale muito a pena" */}
@@ -1379,15 +1379,11 @@ export default function LandingPage() {
                         </div>
                       </div>
 
-                      {/* Parcelamento com destaque */}
-                      <CardDescription className="text-gray-300 text-lg">
-                        <span className="text-orange-400 font-semibold">ou 12x de R$ 137,69</span>
-                      </CardDescription>
 
                       {/* Economia destacada */}
                       <div className="mt-3 p-2 bg-green-500/20 border border-green-500/30 rounded-lg">
                         <p className="text-green-400 text-sm font-bold">
-                          💰 ECONOMIA DE R$ 655,71 + BÔNUS!
+                          💰 ECONOMIA DE R$ 387,00 + BÔNUS!
                         </p>
                       </div>
                     </CardHeader>
@@ -1447,7 +1443,7 @@ export default function LandingPage() {
               {/* Bônus */}
               <div className="mt-12 text-center">
                 <h3 className="text-2xl font-bold mb-8">
-                  <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Bônus Exclusivos</span> (Valor: R$ 655,71)
+                  <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Bônus Exclusivos</span> (Valor: R$ 387,00)
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-2">
                   <div className="bg-gradient-to-br from-[#1e293b] to-[#334155] rounded-lg p-6 border border-orange-500/20">
@@ -1517,7 +1513,7 @@ export default function LandingPage() {
                         </div>
                         <span className="text-base sm:text-lg font-extrabold">Garantir Minha Vaga</span>
                         <div className="bg-yellow-400 text-orange-900 px-3 py-1 rounded-full text-sm font-bold">
-                          R$ 1.331,29
+                          10x de R$ 160,00
                         </div>
                       </div>
                     </Button>
