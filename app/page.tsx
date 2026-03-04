@@ -636,14 +636,6 @@ export default function LandingPage() {
                   </Link>
                 </div>
               </div>
-              <div className="mt-4 flex flex-col items-center space-y-2">
-                <p className="text-orange-400 font-bold animate-pulse text-lg">
-                  🎟️ CUPOM: EVEREST
-                </p>
-                <p className="text-sm text-gray-400">
-                  ⚡ Oferta por tempo limitado - Vagas restritas
-                </p>
-              </div>
             </div>
           </section>
 
@@ -1288,7 +1280,7 @@ export default function LandingPage() {
                   <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent"> especial</span>
                 </h2>
                 <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                  Use o cupom <span className="text-orange-400 font-bold px-2 py-1 bg-orange-400/10 rounded border border-orange-400/20">EVEREST</span> para garantir o valor promocional de apenas 10x de R$ 160,00.
+                  Garanta o valor promocional de apenas 10x de R$ 160,00.
                 </p>
               </div>
 
@@ -1360,21 +1352,21 @@ export default function LandingPage() {
                         {/* Efeito de brilho pulsante */}
                         <div className="absolute inset-0 bg-orange-400 rounded-full blur-lg opacity-60 animate-ping"></div>
 
-                        <Badge className="relative bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2 text-sm font-bold border-2 border-orange-300/50 shadow-lg">
+                        <Badge className="relative bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 text-sm font-bold border-2 border-orange-300/50 shadow-lg whitespace-nowrap">
                           <div className="flex items-center space-x-2">
-                            <Gift className="w-5 h-5 text-yellow-300" />
-                            <span>OFERTA LIMITADA</span>
-                            <div className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse"></div>
+                            <Gift className="w-4 h-4 text-yellow-300 flex-shrink-0" />
+                            <span>OFERTA LIMITADA - Até 02/04</span>
+                            <div className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse flex-shrink-0"></div>
                           </div>
                         </Badge>
                       </div>
                     </div>
 
-                    <CardHeader className="text-center pt-12">
+                    <CardHeader className="text-center pt-14">
                       <CardTitle className="text-2xl text-orange-300">Por</CardTitle>
                       <div className="relative">
                         {/* Preço principal com efeito de brilho */}
-                        <div className="text-6xl font-black bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
+                        <div className="text-5xl md:text-6xl font-black bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
                           10x de R$ 160,00
                         </div>
 
@@ -1384,15 +1376,6 @@ export default function LandingPage() {
                         </div>
                       </div>
 
-
-                      {/* Cupom em destaque */}
-                      <div className="mt-4 p-3 bg-slate-900/50 border-2 border-dashed border-orange-500/30 rounded-xl">
-                        <p className="text-xs text-orange-300 mb-1 font-semibold uppercase tracking-wider">Cupom de Desconto:</p>
-                        <div className="flex items-center justify-between">
-                          <span className="text-2xl font-mono font-bold text-white tracking-widest">EVEREST</span>
-                          <Badge className="bg-orange-500 text-white animate-pulse">COPIAR</Badge>
-                        </div>
-                      </div>
 
                       {/* Economia destacada */}
                       <div className="mt-3 p-2 bg-green-500/20 border border-green-500/30 rounded-lg">
@@ -1555,14 +1538,6 @@ export default function LandingPage() {
                     </Button>
                   </Link>
                 </div>
-              </div>
-              <div className="mt-4 flex flex-col items-center space-y-2">
-                <p className="text-orange-400 font-bold animate-pulse text-lg">
-                  🎟️ CUPOM: EVEREST
-                </p>
-                <p className="text-sm text-gray-400">
-                  ⚡ Oferta por tempo limitado - Vagas restritas
-                </p>
               </div>
             </div>
           </section>
