@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Star, Users, BookOpen, Target, Trophy, Zap, Shield, ArrowRight, Play, Clock, Award, Medal, TrendingUp, BarChart3, Brain, CheckSquare, Moon, Video, FileText, Headphones, MessageCircle, Gift, Bookmark, Calendar, MessageCircle as WhatsApp, X, Check, Instagram, Youtube, Menu } from "lucide-react";
+import { CheckCircle, Star, Users, BookOpen, Target, Trophy, Zap, Shield, ArrowRight, Play, Clock, Award, Medal, TrendingUp, BarChart3, Brain, CheckSquare, Moon, Video, FileText, Headphones, MessageCircle, Gift, Bookmark, Calendar, MessageCircle as WhatsApp, X, Check, Instagram, Youtube } from "lucide-react";
 import { Suspense, lazy } from "react";
 // Lazy load modals para reduzir bundle inicial
 const PrivacyPolicyModal = lazy(() => import("@/components/privacy-policy-modal").then(module => ({ default: module.PrivacyPolicyModal })));
@@ -15,20 +15,11 @@ import { OptimizedVideo } from "@/components/optimized-video";
 import { MobileVideoStrategy } from "@/components/mobile-video-strategy";
 import { MobileOptimizedImage } from "@/components/mobile-optimized-image";
 import { useState } from "react";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerTrigger,
-  DrawerTitle,
-  DrawerDescription,
-} from '@/components/ui/drawer';
 
 export default function LandingPage() {
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
   const [isTermsModalOpen, setIsTermsModalOpen] = useState(false);
   const [isTelegramModalOpen, setIsTelegramModalOpen] = useState(false);
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const checkoutUrl = process.env.NEXT_PUBLIC_CHECKOUT_URL || "https://buy.stripe.com/3cIbJ3eA3gQ38292Vre7m00";
 
   return (
@@ -71,73 +62,6 @@ export default function LandingPage() {
                   <span className="text-orange-500 font-bold text-xl">EVEREST PREPARATÓRIOS</span>
                 </div>
 
-                {/* Menu Desktop - Só aparece em telas médias e grandes */}
-                <div className="desktop-menu hidden md:flex items-center space-x-4 flex-shrink-0">
-                  <Link href="https://alunos.everestpreparatorios.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Acessar área do aluno (abre em nova aba)">
-                    <button className="custom-btn btn-3-orange">
-                      <span>Área do Aluno</span>
-                    </button>
-                  </Link>
-                  <button className="custom-btn btn-3-blue">
-                    <span>Área VIP</span>
-                  </button>
-                </div>
-
-                {/* Menu Mobile - Drawer com botão hambúrguer - Canto direito */}
-                <div className="mobile-menu flex md:hidden items-center flex-shrink-0 ml-auto">
-                  <Drawer
-                    shouldScaleBackground={false}
-                    open={isDrawerOpen}
-                    onOpenChange={setIsDrawerOpen}
-                  >
-                    <DrawerTrigger asChild>
-                      <button
-                        className="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors"
-                        aria-label="Abrir menu de navegação"
-                        aria-expanded={isDrawerOpen}
-                        aria-controls="mobile-navigation-drawer"
-                        role="button"
-                      >
-                        <Menu className="h-6 w-6 text-white" aria-hidden="true" />
-                      </button>
-                    </DrawerTrigger>
-                    <DrawerContent
-                      id="mobile-navigation-drawer"
-                      className="bg-black border-t border-gray-800"
-                    >
-                      {/* Título e descrição para acessibilidade - visualmente ocultos */}
-                      <DrawerTitle className="sr-only">Menu de Navegação</DrawerTitle>
-                      <DrawerDescription className="sr-only">Acesse as áreas do aluno e VIP</DrawerDescription>
-
-                      <div className="mx-auto w-full max-w-md px-4 py-6">
-                        <div className="flex items-center space-x-3">
-                          {/* Foto do Tiago apontando para os botões */}
-                          <div className="flex-shrink-0">
-                            <img
-                              src="/tiago-menu.jpg"
-                              alt="Professor Tiago Costa"
-                              className="w-16 h-16 rounded-full object-cover object-top border-2 border-orange-500"
-                            />
-                          </div>
-
-                          {/* Botões lado a lado */}
-                          <div className="flex flex-row space-x-2 flex-1 min-w-0">
-                            <Link href="https://alunos.everestpreparatorios.com.br/" target="_blank" rel="noopener noreferrer" className="flex-1 min-w-0">
-                              <button className="custom-btn btn-mobile-orange w-full text-xs">
-                                <span>Área do Aluno</span>
-                              </button>
-                            </Link>
-                            <div className="flex-1 min-w-0">
-                              <button className="custom-btn btn-mobile-blue w-full text-xs">
-                                <span>Área VIP</span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </DrawerContent>
-                  </Drawer>
-                </div>
               </div>
             </nav>
           </header>
