@@ -29,6 +29,7 @@ export default function LandingPage() {
   const [isTermsModalOpen, setIsTermsModalOpen] = useState(false);
   const [isTelegramModalOpen, setIsTelegramModalOpen] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const checkoutUrl = process.env.NEXT_PUBLIC_CHECKOUT_URL || "https://buy.stripe.com/3cIbJ3eA3gQ38292Vre7m00";
 
   return (
     <>
@@ -597,7 +598,7 @@ export default function LandingPage() {
                   {/* Efeito de borda sutil */}
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 rounded-2xl opacity-30"></div>
 
-                  <a href="https://pay.kiwify.com.br/DVEIjDk" target="_blank" rel="noopener noreferrer" className="block w-full">
+                  <a href={checkoutUrl} target="_blank" rel="noopener noreferrer" className="block w-full">
                     <Button size="lg" className="relative bg-gradient-to-r from-orange-500 via-orange-600 to-red-600 hover:from-orange-600 hover:via-orange-700 hover:to-red-700 text-white text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 font-bold shadow-2xl group-hover:shadow-orange-500/50 transition-all duration-300 group-hover:scale-105 border-2 border-orange-400/30 hover:border-orange-300/50 w-full sm:w-auto">
                       <div className="flex items-center justify-center space-x-3">
                         <div className="relative">
@@ -1406,7 +1407,7 @@ export default function LandingPage() {
                         {/* Efeito de brilho pulsante no botão */}
                         <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-red-500 rounded-xl blur-lg opacity-60 animate-pulse"></div>
 
-                        <a href="https://pay.kiwify.com.br/DVEIjDk" target="_blank" rel="noopener noreferrer">
+                        <a href={checkoutUrl} target="_blank" rel="noopener noreferrer">
                           <Button className="relative w-full py-4 px-4 sm:px-6 bg-gradient-to-r from-orange-500 via-orange-600 to-red-600 hover:from-orange-600 hover:via-orange-700 hover:to-red-700 text-white font-bold text-lg shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 group-hover:scale-105 border-0">
                             <div className="flex items-center justify-center space-x-2 sm:space-x-3">
                               <div className="relative">
@@ -1500,7 +1501,7 @@ export default function LandingPage() {
                   {/* Efeito de borda animada */}
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 rounded-2xl  opacity-75"></div>
 
-                  <a href="https://pay.kiwify.com.br/DVEIjDk" target="_blank" rel="noopener noreferrer" className="block w-full">
+                  <a href={checkoutUrl} target="_blank" rel="noopener noreferrer" className="block w-full">
                     <Button size="lg" className="relative bg-gradient-to-r from-orange-500 via-orange-600 to-red-600 hover:from-orange-600 hover:via-orange-700 hover:to-red-700 text-white text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 font-bold shadow-2xl group-hover:shadow-orange-500/50 transition-all duration-300 group-hover:scale-105 border-2 border-orange-400/30 hover:border-orange-300/50 w-full sm:w-auto">
                       <div className="flex items-center justify-center space-x-3">
                         <div className="relative">
@@ -1713,7 +1714,7 @@ export default function LandingPage() {
 
                 {/* Botão de compra */}
                 <a
-                  href="https://pay.kiwify.com.br/DVEIjDk"
+                  href={checkoutUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full"
