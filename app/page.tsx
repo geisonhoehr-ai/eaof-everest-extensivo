@@ -591,7 +591,7 @@ export default function LandingPage() {
                 <div className="relative overflow-hidden">
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-500 via-red-500 to-orange-500  opacity-75 blur-sm"></div>
                   <YouTubeEmbedOptimized
-                    videoId="VqvU4orX3qk"
+                    videoId="3Yq9DtPtyd4"
                     title="Vídeo Demonstrativo - Everest Preparatórios"
                     className="w-full max-w-4xl mx-auto"
                   />
