@@ -632,16 +632,20 @@ export default function LandingPage() {
                 />
 
                 {/* Depoimento YouTube Shorts */}
-                <div className="relative rounded-2xl overflow-hidden border-2 border-orange-500/30 bg-gradient-to-br from-gray-900 to-gray-800" style={{ aspectRatio: '9/16' }}>
-                  <iframe
-                    src="https://www.youtube.com/embed/2CnIID2l3aI?rel=0&modestbranding=1"
-                    title="Depoimento 4 - Aluno aprovado EAOF"
-                    className="w-full h-full absolute inset-0"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    loading="lazy"
-                  />
+                <div className="bg-gradient-to-br from-[#1e293b] to-[#334155] rounded-2xl p-4 sm:p-6 border-2 border-orange-500/30 shadow-lg">
+                  <div className="aspect-[9/16] bg-black rounded-xl overflow-hidden mb-4 border border-orange-500/20 relative">
+                    <iframe
+                      src="https://www.youtube.com/embed/2CnIID2l3aI?rel=0&modestbranding=1"
+                      title="Depoimento 4 - Aluno aprovado EAOF"
+                      className="w-full h-full absolute inset-0"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2 text-orange-400 px-1">Depoimento 4</h3>
+                  <p className="text-sm text-gray-300 px-1">A preparação certa faz toda a diferença na hora da prova!</p>
                 </div>
               </div>
 
