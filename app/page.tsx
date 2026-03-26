@@ -20,7 +20,7 @@ export default function LandingPage() {
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
   const [isTermsModalOpen, setIsTermsModalOpen] = useState(false);
   const [isTelegramModalOpen, setIsTelegramModalOpen] = useState(false);
-  const checkoutUrl = process.env.NEXT_PUBLIC_CHECKOUT_URL || "https://buy.stripe.com/3cIbJ3eA3gQ38292Vre7m00";
+  const checkoutUrl = process.env.NEXT_PUBLIC_CHECKOUT_URL || "https://pay.kiwify.com.br/DVEIjDk";
 
   return (
     <>
@@ -103,8 +103,8 @@ export default function LandingPage() {
                   </span>
                 </h1>
                 <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
-                  A plataforma mais completa para estudar Português e Redação para concursos militares da aeronáutica.
-                  <span className="text-orange-400 font-semibold"> 785+ flashcards</span>, simulados exclusivos e correção de redações.
+                  A plataforma mais completa para estudar Português e Redação para o EAOF 2027.
+                  <span className="text-orange-400 font-semibold"> 196 aulas, +131 horas, 3.095 flashcards, 6.213 quizzes</span>, simulados, correção de redações e mentorias ao vivo.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-4 lg:space-x-8 text-sm text-gray-400 px-4">
                   <div className="flex items-center">
@@ -163,7 +163,7 @@ export default function LandingPage() {
 
                         <h3 className="text-2xl font-bold mb-3 text-green-400">Grupo WhatsApp</h3>
                         <p className="text-gray-300 mb-4">
-                          📱 Preparatório CIAAR 2026<br />
+                          📱 Preparatório CIAAR 2027<br />
                           <span className="text-sm text-gray-400">(Português e Redação)</span>
                         </p>
 
@@ -224,7 +224,7 @@ export default function LandingPage() {
                         </div>
                         <div className="flex items-center justify-center">
                           <Clock className="w-4 h-4 text-blue-500 mr-2" />
-                          <span>Conteúdo atualizado 2026</span>
+                          <span>Conteúdo atualizado 2027</span>
                         </div>
                       </div>
 
@@ -612,7 +612,7 @@ export default function LandingPage() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 px-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 px-2">
                 <MobileVideoStrategy
                   src="/case-sucesso-1.mp4"
                   title="Depoimento 1"
@@ -630,6 +630,19 @@ export default function LandingPage() {
                   title="Depoimento 3"
                   description="Sonho realizado! Agora sou oficial da Aeronáutica!"
                 />
+
+                {/* Depoimento YouTube Shorts */}
+                <div className="relative rounded-2xl overflow-hidden border-2 border-orange-500/30 bg-gradient-to-br from-gray-900 to-gray-800" style={{ aspectRatio: '9/16' }}>
+                  <iframe
+                    src="https://www.youtube.com/embed/2CnIID2l3aI?rel=0&modestbranding=1"
+                    title="Depoimento 4 - Aluno aprovado EAOF"
+                    className="w-full h-full absolute inset-0"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    loading="lazy"
+                  />
+                </div>
               </div>
 
               <div className="text-center mt-12">
@@ -674,184 +687,184 @@ export default function LandingPage() {
                       <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mb-4">
                         <BookOpen className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-xl text-orange-400">Flashcards Inteligentes</CardTitle>
+                      <CardTitle className="text-xl text-orange-400">3.095 Flashcards</CardTitle>
                       <CardDescription className="text-gray-300">
-                        Sistema de repetição espaçada com 785+ flashcards de Português e Regulamentos Militares
+                        6 matérias e 83 tópicos para memorização eficiente
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-end">
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Algoritmo SM-2 para memorização eficiente
+                          6 matérias completas
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Progresso personalizado por tópico
+                          83 tópicos organizados
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Estatísticas detalhadas de aprendizado
+                          Repetição espaçada para memorização
                         </li>
                       </ul>
                     </CardContent>
                   </Card>
                 </div>
 
-                {/* Card Simulados com efeito LED */}
+                {/* Card Quizzes com efeito LED */}
                 <div className="relative h-full">
                   <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500  opacity-75 blur-sm" style={{ animationDelay: '1s' }}></div>
                   <Card className="relative bg-gradient-to-br from-[#1e293b] to-[#334155] border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                     <CardHeader className="flex-shrink-0">
                       <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
-                        <Target className="w-6 h-6 text-white" />
+                        <CheckSquare className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-xl text-orange-400">Simulados Exclusivos</CardTitle>
+                      <CardTitle className="text-xl text-orange-400">6.213 Quizzes</CardTitle>
                       <CardDescription className="text-gray-300">
-                        Questões inéditas baseadas no edital do CIAAR com explicações detalhadas
+                        7 matérias, 89 tópicos e banco de questões completo
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-end">
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          19 quizzes de Português e Regulamentos
+                          7 matérias e 89 tópicos
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Questões comentadas por especialistas
+                          Banco com 6.213 questões
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Simulados cronometrados
+                          Prática direcionada por tema
                         </li>
                       </ul>
                     </CardContent>
                   </Card>
                 </div>
 
-                {/* Card Correção com efeito LED */}
+                {/* Card Mapas Mentais com efeito LED */}
                 <div className="relative h-full">
                   <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-500  opacity-75 blur-sm" style={{ animationDelay: '2s' }}></div>
                   <Card className="relative bg-gradient-to-br from-[#1e293b] to-[#334155] border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                     <CardHeader className="flex-shrink-0">
                       <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4">
-                        <Award className="w-6 h-6 text-white" />
+                        <Brain className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-xl text-orange-400">Correção de Redações</CardTitle>
+                      <CardTitle className="text-xl text-orange-400">9 Mapas Mentais</CardTitle>
                       <CardDescription className="text-gray-300">
-                        Envie suas redações e receba feedback detalhado dos nossos professores
+                        299 conceitos organizados visualmente para revisão rápida
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-end">
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Correção em 10 dias
+                          9 mapas completos
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Feedback personalizado
+                          299 conceitos-chave
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Dicas de melhoria
+                          Revisão visual e rápida
                         </li>
                       </ul>
                     </CardContent>
                   </Card>
                 </div>
 
-                {/* Card Comunidade Exclusiva com efeito LED */}
+                {/* Card Acervo Digital com efeito LED */}
                 <div className="relative h-full">
                   <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-green-500 via-emerald-500 to-green-500  opacity-75 blur-sm" style={{ animationDelay: '3s' }}></div>
                   <Card className="relative bg-gradient-to-br from-[#1e293b] to-[#334155] border-green-500/20 hover:border-green-500/40 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                     <CardHeader className="flex-shrink-0">
                       <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-lg flex items-center justify-center mb-4">
-                        <Users className="w-6 h-6 text-white" />
+                        <FileText className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-xl text-orange-400">Comunidade Exclusiva</CardTitle>
+                      <CardTitle className="text-xl text-orange-400">Acervo Digital</CardTitle>
                       <CardDescription className="text-gray-300">
-                        Conecte-se com outros candidatos e tire dúvidas com professores
+                        133 materiais, 33 livros e 100 provas com gabaritos
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-end">
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Fórum de discussões
+                          133 materiais de apoio
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Lives semanais
+                          33 livros do edital
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Suporte direto
+                          100 provas com gabaritos
                         </li>
                       </ul>
                     </CardContent>
                   </Card>
                 </div>
 
-                {/* Card Ranking e Progresso com efeito LED */}
+                {/* Card Evercast Podcast com efeito LED */}
                 <div className="relative h-full">
                   <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-500  opacity-75 blur-sm" style={{ animationDelay: '4s' }}></div>
                   <Card className="relative bg-gradient-to-br from-[#1e293b] to-[#334155] border-yellow-500/20 hover:border-yellow-500/40 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                     <CardHeader className="flex-shrink-0">
                       <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-lg flex items-center justify-center mb-4">
-                        <Trophy className="w-6 h-6 text-white" />
+                        <Headphones className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-xl text-orange-400">Ranking e Progresso</CardTitle>
+                      <CardTitle className="text-xl text-orange-400">Evercast (Podcast)</CardTitle>
                       <CardDescription className="text-gray-300">
-                        Acompanhe sua evolução e dispute o ranking com outros alunos
+                        Escute as aulas em formato podcast onde e quando quiser
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-end">
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Estatísticas detalhadas
+                          Aulas em áudio
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Ranking semanal
+                          Estude em qualquer lugar
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Conquistas e badges
+                          Conteúdo completo em podcast
                         </li>
                       </ul>
                     </CardContent>
                   </Card>
                 </div>
 
-                {/* Card Lives Especiais com efeito LED */}
+                {/* Card Plano de Estudo e Gamificação com efeito LED */}
                 <div className="relative h-full">
                   <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-red-500 via-pink-500 to-red-500  opacity-75 blur-sm" style={{ animationDelay: '5s' }}></div>
                   <Card className="relative bg-gradient-to-br from-[#1e293b] to-[#334155] border-red-500/20 hover:border-red-500/40 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                     <CardHeader className="flex-shrink-0">
                       <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-red-600 rounded-lg flex items-center justify-center mb-4">
-                        <Clock className="w-6 h-6 text-white" />
+                        <Trophy className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-xl text-orange-400">Lives Especiais</CardTitle>
+                      <CardTitle className="text-xl text-orange-400">Plano de Estudo + Gamificação</CardTitle>
                       <CardDescription className="text-gray-300">
-                        Participe de lives exclusivas e tire dúvidas ao vivo
+                        Cronômetro, ranking da turma, desempenho, progresso e conquistas
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-end">
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Lives semanais
+                          Cronômetro e plano de estudo
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Dúvidas ao vivo
+                          Ranking da turma e gamificação
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Conteúdo exclusivo
+                          Desempenho, progresso e conquistas
                         </li>
                       </ul>
                     </CardContent>
@@ -881,7 +894,7 @@ export default function LandingPage() {
                   <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent"> incluído</span>
                 </h2>
                 <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                  Um curso completo com tudo que você precisa para passar no CIAAR da primeira vez.
+                  Extensivo EAOF 2027 com acesso por 12 meses. Tudo que você precisa para passar no CIAAR.
                 </p>
               </div>
 
@@ -894,24 +907,24 @@ export default function LandingPage() {
                       <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mb-4">
                         <Video className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-xl text-orange-400">120+ Aulas Gravadas</CardTitle>
+                      <CardTitle className="text-xl text-orange-400">196 Aulas Gravadas</CardTitle>
                       <CardDescription className="text-gray-300">
-                        Aulas completas de Português e Regulamentos Militares
+                        +131 horas de aulas de GIT em 9 frentes, com visualização off-line
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-end">
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Gramática completa
+                          Gramática (teoria e prática)
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Interpretação de textos
+                          Redação (teoria e prática)
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Regulamentos militares
+                          Material de aula, exercícios, flashcards e quiz
                         </li>
                       </ul>
                     </CardContent>
@@ -926,24 +939,24 @@ export default function LandingPage() {
                       <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
                         <FileText className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-xl text-orange-400">Material de Apoio</CardTitle>
+                      <CardTitle className="text-xl text-orange-400">Acervo Digital</CardTitle>
                       <CardDescription className="text-gray-300">
-                        PDFs, resumos e material complementar
+                        133 materiais, 33 livros e 100 provas com gabaritos
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-end">
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Resumos em PDF
+                          133 materiais de apoio
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Mapas mentais
+                          33 livros do edital
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Listas de exercícios
+                          100 provas com gabaritos
                         </li>
                       </ul>
                     </CardContent>
@@ -958,24 +971,24 @@ export default function LandingPage() {
                       <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4">
                         <Target className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-xl text-orange-400">Simulados Exclusivos</CardTitle>
+                      <CardTitle className="text-xl text-orange-400">10 Simulados</CardTitle>
                       <CardDescription className="text-gray-300">
-                        20 simulados completos com questões inéditas
+                        10 provas simuladas com 10 temas de redação
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-end">
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Simulados cronometrados
+                          Provas no formato do edital
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Questões comentadas
+                          Resoluções em vídeo
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Relatórios de desempenho
+                          10 temas de redação
                         </li>
                       </ul>
                     </CardContent>
@@ -990,31 +1003,31 @@ export default function LandingPage() {
                       <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-lg flex items-center justify-center mb-4">
                         <Headphones className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-xl text-orange-400">Lives Semanais</CardTitle>
+                      <CardTitle className="text-xl text-orange-400">24 Mentorias ao Vivo</CardTitle>
                       <CardDescription className="text-gray-300">
-                        Aulas ao vivo com professores especialistas
+                        Mentorias ao vivo para dúvidas e prática de questões - início em abril
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-end">
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Todo sábado
+                          Retirada de dúvidas ao vivo
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Dúvidas ao vivo
+                          Prática de análise de questões
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Conteúdo exclusivo
+                          Disponíveis no site após a live
                         </li>
                       </ul>
                     </CardContent>
                   </Card>
                 </div>
 
-                {/* Card Grupo VIP com efeito LED */}
+                {/* Card Comunidade com efeito LED */}
                 <div className="relative h-full">
                   <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-500  opacity-75 blur-sm" style={{ animationDelay: '4s' }}></div>
                   <Card className="relative bg-gradient-to-br from-[#1e293b] to-[#334155] border-orange-500/20 hover:border-orange-500/40 transition-all duration-300 hover:scale-105 h-full flex flex-col">
@@ -1022,24 +1035,24 @@ export default function LandingPage() {
                       <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-lg flex items-center justify-center mb-4">
                         <MessageCircle className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-xl text-orange-400">Grupo VIP</CardTitle>
+                      <CardTitle className="text-xl text-orange-400">Comunidade</CardTitle>
                       <CardDescription className="text-gray-300">
-                        Comunidade exclusiva com suporte direto
+                        Comunidade da turma, comunidade geral e canais de dúvidas
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-end">
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          WhatsApp exclusivo
+                          Comunidade da turma e geral
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Suporte 24/7
+                          Canais de dúvidas por matéria
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Networking
+                          Suporte direto dos professores
                         </li>
                       </ul>
                     </CardContent>
@@ -1054,24 +1067,24 @@ export default function LandingPage() {
                       <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-red-600 rounded-lg flex items-center justify-center mb-4">
                         <Award className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-xl text-orange-400">Correção de Redações</CardTitle>
+                      <CardTitle className="text-xl text-orange-400">10 Redações Corrigidas</CardTitle>
                       <CardDescription className="text-gray-300">
-                        Envie até 10 redações com correção detalhada
+                        Correção detalhada com laudo avaliativo e auxílio de IA
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-end">
                       <ul className="space-y-2 text-sm text-gray-300">
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Correção em 10 dias
+                          Laudo avaliativo completo
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Feedback personalizado
+                          Auxílio de IA
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                          Dicas de melhoria
+                          Sugestões de melhoria
                         </li>
                       </ul>
                     </CardContent>
@@ -1314,15 +1327,15 @@ export default function LandingPage() {
                       <ul className="space-y-3 text-sm mb-6">
                         <li className="flex items-center">
                           <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
-                          <span className="text-green-300 font-semibold">Curso completo</span>
+                          <span className="text-green-300 font-semibold">196 aulas + acervo digital</span>
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
-                          <span className="text-green-300 font-semibold">+5 bônus exclusivos</span>
+                          <span className="text-green-300 font-semibold">10 simulados + 10 redações corrigidas</span>
                         </li>
                         <li className="flex items-center">
                           <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
-                          <span className="text-green-300 font-semibold">Acesso por 12 meses</span>
+                          <span className="text-green-300 font-semibold">24 mentorias ao vivo + acesso 12 meses</span>
                         </li>
                       </ul>
 
@@ -1625,10 +1638,11 @@ export default function LandingPage() {
                 <div className="bg-slate-800/50 rounded-lg p-4 mb-6">
                   <h4 className="text-orange-400 font-semibold mb-2">Benefícios exclusivos:</h4>
                   <ul className="text-sm text-gray-300 space-y-1">
-                    <li>• Mentorias ao vivo com professores</li>
-                    <li>• Simulados e resoluções detalhadas</li>
-                    <li>• Conteúdo atualizado para 2026</li>
-                    <li>• Suporte direto da equipe</li>
+                    <li>• 196 aulas gravadas (+131 horas)</li>
+                    <li>• 10 simulados com resoluções em vídeo</li>
+                    <li>• 10 redações corrigidas com laudo</li>
+                    <li>• 24 mentorias ao vivo</li>
+                    <li>• Comunidade para retirada de dúvidas</li>
                   </ul>
                 </div>
 
