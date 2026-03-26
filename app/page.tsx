@@ -235,7 +235,7 @@ export default function LandingPage() {
                         </div>
 
                         <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-full font-semibold group-hover:from-orange-600 group-hover:to-orange-700 transition-all duration-300 inline-flex items-center">
-                          <Zap className="w-5 h-5 mr-2 text-yellow-300" />
+                          <Users className="w-5 h-5 mr-2" />
                           Experimentar Grátis
                         </div>
                       </div>
